@@ -1,0 +1,18 @@
+body{
+    background-color: burlywood;
+}
+
+h3{
+    font-size: 32px;
+    /* text-align: center; */
+    text-decoration: none;
+}
+
+.main-list li{
+    margin :5px ;
+    background-color: red;
+    width: 140px;
+    border-radius:3px;
+    color: black;
+    text-align: center;
+}

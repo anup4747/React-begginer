@@ -1,0 +1,11 @@
+.welcome-message{
+    background-color: rgb(48, 184, 48);
+    color: white;
+    padding: 10px;
+}
+
+.error-message{
+     background-color: red;
+    color: white;
+    padding: 10px;
+}
