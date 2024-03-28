@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: rgb(36, 32, 32);
+}
+
+.card {
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(
+    45deg,
+    #3498db,
+    #2acaff,
+    #6b99b8,
+    #f1c40f,
+    #e74c3c
+  ); */
+  background-image: url("assets/mark.jpg");
+  /* background-position: center; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 40px;
+  border-radius: 40px;
+  scale: 1.02;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.8);
+}
+.card input {
+  height: 50px;
+  width: 350px;
+  border-radius: 45px;
+  border: none;
+  text-indent: 20px;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.search {
+  display: flex;
+  margin: 0px auto;
+}
+
+.card .search button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  border-radius: 45px;
+  border: none;
+  margin-left: 10px;
+  font-size: 20px;
+  transition: all 0.2s;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  color: rgb(53, 89, 91);
+}
+
+.card button:hover {
+  background-color: rgb(245, 228, 161);
+}
+
+.weather {
+  display: flex;
+  flex-direction: column;
+}
+.weather-img {
+  margin: 10px auto;
+  /* margin-top: 4px;
+  margin-bottom: 0px; */
+}
+
+.weather-img img {
+  margin: 0;
+  padding: 0;
+  height: 155px;
+  width: 155px;
+}
+
+.city-temp {
+  margin: 0px auto;
+  text-align: center;
+}
+
+.temp {
+  font-weight: bold;
+  font-size: 55px;
+}
+
+.city {
+  font-size: 30px;
+}
+
+.details {
+  display: flex;
+  margin-top: 32px;
+}
+
+.col {
+  display: flex;
+  align-items: center;
+  margin-right: 25px; /* Adjust thte margin as needed for spacing between columns */
+  margin-left: 25px;
+}
+
+.details img {
+  margin-right: 10px; /* Adjust the margin as needed for spacing between image and text */
+  height: 75px;
+  width: 75px;
+}
+
+/* Additional styling for better aesthetics (optional) */
+.details p {
+  margin: 0;
+}
+
+.details .col:last-child {
+  margin-right: 0; /* Remove the right margin for the last column */
+  margin-left: 0;
+}
+
+.wind {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.humidity {
+  font-size: 23px;
+  font-weight: bold;
+}
+
+.description{
+  font-size: 20px;
+}
+.description2{
+  font-size: 20px;
+}
+
+/* animation */
+
+.animate {
+  animation: fadeInOut 1s ease;
+}
+
+@keyframes fadeInOut {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 1;
+    /* transform: translateY(10px); */
+  }
+}
+/* 
+.card {
+  transition: all 0.5s ease-in-out;
+} */
+
+.weather-icon,
+.temp,
+.humidity,
+.wind {
+  transition: opacity 1s ease-in-out, transform 0.5s ease-in-out;
+}
+
+/* .face {
+  transition: transform 0.5s ease-in-out;
+} */
