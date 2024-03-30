@@ -1,0 +1,45 @@
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+
+}
+
+.current-item{
+    padding: 15px;
+    border: 2px solid red;
+    width: 330px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 8px;
+}
+
+.current-item img{
+    width: 300px;
+    margin: 10px;
+}
+
+.load-button{
+    padding: 12px;
+    background-color: rgb(135, 135, 135);
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+}

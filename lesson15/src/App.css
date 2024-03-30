@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+body{
+  font-family: "Noto Sans", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container{
+  height: 100vh;
+  
+}
+
+.container h1{
+  text-align: center;
+}
+
+.Input-section{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.Qrcode{
+  display: flex;
+  justify-content: center;
+}
+
